@@ -9,6 +9,8 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+builder.Services.AddDbContext()
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
